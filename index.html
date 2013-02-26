@@ -1,28 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
     <title>Love wisdom by chamsae</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
+
   <body>
-    <div class="wrapper">
+    <a id="forkme_banner" href="https://github.com/chamsae">View on GitHub</a>
+    <div class="shell">
+
       <header>
-        <h1>Love wisdom</h1>
-        <p>참새</p>
-
-
-        <p class="view"><a href="https://github.com/chamsae">View My GitHub Profile</a></p>
-
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Love wisdom</h1>
+            <h2>참새</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
       </header>
-      <section>
+
+      <div id="no-downloads">
+        <span class="inner">
+        </span>
+      </div>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
         <h2>interactive</h2>
 
 <ul>
@@ -32,11 +54,35 @@
 </ul><h2>programming</h2>
 
 <ul>
-<li>Wishtree Server, 2013</li>
-<li>Clickphone Project, 2012~</li>
+<li>
+<p>Wishtree Server, 2013</p>
+
+<ul>
+<li>Node.js, PHP, MySQL</li>
+<li>Node.js를 사용하여 MO SMS server로부터 POST요청을 받아 DB에 저장하고, vvvv로 전달하는 서버를 구현했습니다.</li>
+</ul>
+</li>
+<li><p>Clickphone Project, 2012~</p></li>
+</ul><blockquote>
+<p>Android, iOS, Phonegap, Node.js, MySQL
+Node.js의 socket.io모듈을 이용한 실시간 투표, 통계 서비스를 제공하는 웹어플리케이션타입 솔루션입니다.</p>
+</blockquote>
+
+<ul>
 <li>Waffle Store, 2012</li>
+</ul><blockquote>
+<p>Java, Spring Framework, Oracle
+Spring을 사용하여 Apple Store를 모방한 온라인 쇼핑몰 서비스를 구현했습니다.</p>
+</blockquote>
+
+<ul>
 <li>ADPOWER Online, 2011</li>
-</ul><h2>movie</h2>
+</ul><blockquote>
+<p>XpressEngine, PHP, MySQL
+XE CMS를 사용하여 기존 ZeroBoard4기반의 웹사이트를 새로운 기반으로 이전하는 작업을 진행했습니다.</p>
+</blockquote>
+
+<h2>movie</h2>
 
 <ul>
 <li>빛, 2011</li>
@@ -99,11 +145,21 @@ $ git checkout gh-pages
 
 <p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
+
       <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>Projects by <a href="https://github.com/chamsae">chamsae</a> can be found on <a href="https://github.com/chamsae">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
       </footer>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
     
   </body>
 </html>
